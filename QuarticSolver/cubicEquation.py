@@ -5,7 +5,7 @@ from math import atan, cos, sqrt, pi
 
 class CubicEquation():
     """
-    Solve de Cubic Equation
+    Cubic Equation Solver
     """
     def Solve(a, b, c, d, display=False):
         # validate if is cubic equation

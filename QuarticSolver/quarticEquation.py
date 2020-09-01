@@ -6,7 +6,7 @@ from cubicEquation import CubicEquation
 
 class QuarticEquation():
     """
-    Solve Quartic Equations
+    Quartic Equations Solver
     References:
     Paper: A Note on the Solution of Quartic Equations
     By Herbert E. Salzer Quartic Equations
