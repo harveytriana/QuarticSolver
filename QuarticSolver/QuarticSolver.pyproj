@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>25fe2110-7aeb-4acd-98c5-07d454bda8c1</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>samples.py</StartupFile>
+    <StartupFile>QuarticSolver.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

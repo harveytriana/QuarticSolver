@@ -49,7 +49,7 @@ while True:
 
 # OUTOUT
 if not coe == []:
-    qe.CubicEquation.Solve(coe[0], coe[1], coe[2], coe[3], True)
+    qe.QuarticEquation.Solve(coe[0], coe[1], coe[2], coe[3], coe[4], True)
 else:
     print('Nothing to do.')
 
