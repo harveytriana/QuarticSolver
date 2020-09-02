@@ -26,6 +26,7 @@ class CubicEquation():
         t = q ** 2 / 4 + p ** 3 / 27
 
         if is_zero(t): t = 0
+        if is_zero(q): q = 0
 
         # There are three cases according to the value of t
         if t > 0: # one real, two complexs
@@ -35,7 +36,10 @@ class CubicEquation():
             r2 = -r1 / 2
             r3 = r2 # conjugated
             # imaginary
-            i = sqrt(abs(r1 ** 2 / 4 + q / r1))
+            if q == 0:
+                i = sqrt(k)
+            else:
+                i = sqrt(abs(r1 ** 2 / 4 + q / r1))
             i1 = 0
             i2 = i
             i3 = -i
