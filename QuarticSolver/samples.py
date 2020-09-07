@@ -1,6 +1,7 @@
 #===================================
-# © Copyright.  VISIONARY S.A.S.
-# SAMPLES MODULE
+# VISIONARY S.A.S.
+# Samples module
+# harvey.triana@visionary-saas.com 
 #===================================
 import quarticEquation as qe
 import cubicEquation as ce

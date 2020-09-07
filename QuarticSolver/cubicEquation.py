@@ -1,5 +1,6 @@
 #===================================
-# © Copyright.  VISIONARY S.A.S.
+# VISIONARY S.A.S.
+# harvey.triana@visionary-saas.com 
 #===================================
 from math import atan, cos, sqrt, pi
 
