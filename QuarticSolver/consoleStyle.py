@@ -1,6 +1,6 @@
 #===================================
-# VISIONARY S.A.S.
-# harvey.triana@visionary-saas.com 
+# harveytriana@gmail.com
+# Twitter: @__harveyCS__
 #===================================
 import os
 

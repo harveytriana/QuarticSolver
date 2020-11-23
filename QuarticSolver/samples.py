@@ -1,7 +1,6 @@
 #===================================
-# VISIONARY S.A.S.
-# Samples module
-# harvey.triana@visionary-saas.com 
+# harveytriana@gmail.com
+# Twitter: @__harveyCS__
 #===================================
 import quarticEquation as qe
 import cubicEquation as ce
