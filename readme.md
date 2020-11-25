@@ -17,5 +17,6 @@ By: Harvey Triana
     @__harveyt__
     harveytriana@gmail.com
 
-Sample in console:
-[[https://github.com/harveytriana/QuarticSolver/blob/master/images/sample_console.png]]
+Sample:
+![alt text](https://github.com/harveytriana/QuarticSolver/blob/master/images/sample_console.png)
+
