@@ -11,6 +11,11 @@ Modified here for support all cases.
 [Some theory](https://en.wikipedia.org/wiki/Quadratic_equation)
 
 ### Solution for ax^4 + bx^3 + cx^2 + d = 0
-Class cubicEquation
+Class quarticquation
 
-By: Harvey Triana harveytriana@gmail.com
+By: Harvey Triana 
+    @__harveyt__
+    harveytriana@gmail.com
+
+Sample in console:
+[[images/sample_console.png]]
