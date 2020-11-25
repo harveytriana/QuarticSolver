@@ -18,5 +18,6 @@ By: Harvey Triana
     harveytriana@gmail.com
 
 ####Sample:
+
 ![alt text](https://github.com/harveytriana/QuarticSolver/blob/master/images/sample_console.png)
 
