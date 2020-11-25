@@ -17,7 +17,8 @@ By: Harvey Triana
     @__harveyt__
     harveytriana@gmail.com
 
-#### Sample:
+
+### Sample:
 
 ![alt text](https://github.com/harveytriana/QuarticSolver/blob/master/images/sample_console.png)
 
