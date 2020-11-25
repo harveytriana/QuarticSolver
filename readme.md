@@ -18,4 +18,4 @@ By: Harvey Triana
     harveytriana@gmail.com
 
 Sample in console:
-[[images/sample_console.png]]
+[[/images/sample_console.png]]
