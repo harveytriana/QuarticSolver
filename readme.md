@@ -14,11 +14,9 @@ Modified here for support all cases.
 Class quarticquation
 
 By: Harvey Triana 
-    ```text
+    ```
     @__harveyt__
     ```
-    harveytriana@gmail.com
-
 
 ### Sample:
 
