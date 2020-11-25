@@ -1,7 +1,7 @@
-#===================================
+# ===================================
 # harveytriana@gmail.com
-# Twitter: @__harveyCS__
-#===================================
+# Twitter: @__harveyt__
+# ===================================
 import quarticEquation as qe
 import cubicEquation as ce
 
@@ -19,4 +19,3 @@ qe.QuarticEquation.Solve(1.0, 0.0, 0.0, 0.0, -1.0, True)
 # ce.CubicEquation.Solve(1.0, 2.0, 1.0, 2.0, True)
 
 print('')
-

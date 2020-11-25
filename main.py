@@ -1,9 +1,10 @@
-#===================================
+# ===================================
 # harveytriana@gmail.com
-# Twitter: @__harveyCS__
-#===================================
+# Twitter: @__harveyt__
+# ===================================
 import consoleStyle as echo
 import quarticEquation as qe
+
 
 def main():
     echo.Green('QUARTIC EQUATION\n')
@@ -15,7 +16,7 @@ def main():
     while True:
         input_string = input("Enter list [a, b, c, d, e] separated by space: ")
 
-        user_list = input_string.split()
+        user_list = input_string.split(',')
 
         # input validation
         e = ''
@@ -28,9 +29,9 @@ def main():
             e = 'Bad coe number (' + str(n) + ')... Use 5'
 
         for x in user_list:
-            if  x.isalpha(): 
+            if x.isalpha():
                 error = 'Bad coeficient: ' + x
-    
+
         if e == '':
             for x in user_list:
                 coe.append(float(x))
@@ -39,7 +40,7 @@ def main():
 
             if coe[0] == 0.0:
                 e = 'Coefficient a can not be 0'
-            
+
         if e == '':
             break
         else:
@@ -54,6 +55,6 @@ def main():
 
     echo.Yellow("\nEnd output.\n")
 
-main()
 
-
+if __name__ == "__main__":
+    main()

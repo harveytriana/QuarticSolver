@@ -1,9 +1,10 @@
-#===================================
+# ===================================
 # harveytriana@gmail.com
-# Twitter: @__harveyCS__
-#===================================
+# Twitter: @__harveyt__
+# ===================================
 from math import sqrt
 from cubicEquation import CubicEquation
+
 
 class QuarticEquation():
     """
@@ -16,43 +17,44 @@ class QuarticEquation():
     Others
     https:#en.wikipedia.org/wiki/Quadratic_equation
     """
-    def Solve(a, b, c, d, e, display = False):
+    def Solve(a, b, c, d, e, display=False):
         # validate if is quartic equation
-        if a == 0: return None
+        if a == 0:
+            return None
 
         # validate zero in float world
-        is_zero = lambda x: abs(x) < 1.0E-8
+        def is_zero(x): return abs(x) < 1.0E-8
 
-        A = b / a     
-        B = c / a     
-        C = d / a     
-        D = e / a     
+        A = b / a
+        B = c / a
+        C = d / a
+        D = e / a
         # First, get the resolvent cubic equation, x^3 + C2x^2 + C1x + C0 = 0
         # (C sufix)
-        C3 = 1     
-        C2 = -B     
-        C1 = A * C - 4 * D     
-        C0 = D * (4 * B - A * A) - C * C     
+        C3 = 1
+        C2 = -B
+        C1 = A * C - 4 * D
+        C0 = D * (4 * B - A * A) - C * C
 
         cr = CubicEquation.Solve(C3, C2, C1, C0)
 
         if cr == None:
             return None
         if is_zero(cr[0].imag):
-           x1 = cr[0].real
+            x1 = cr[0].real
         elif is_zero(cr[1].imag):
-           x1 = cr[1].real
+            x1 = cr[1].real
         elif is_zero(ce[2].imag):
-           x1 = cr[2].real
+            x1 = cr[2].real
         else:
             return None
 
         m = sqrt(abs(A * A / 4 - B + x1))
-        if is_zero(m): 
-           m = 0
-           n = sqrt(x1 * x1 / 4 - D)
+        if is_zero(m):
+            m = 0
+            n = sqrt(x1 * x1 / 4 - D)
         else:
-           n = (A * x1 - 2 * C) / (4 * m)
+            n = (A * x1 - 2 * C) / (4 * m)
 
         alpha = A * A / 2 - x1 - B
         beta = 4 * n - A * m
@@ -61,14 +63,14 @@ class QuarticEquation():
         gamma = sqrt(abs(t1))
         delta = sqrt(abs(t2))
 
-        if t1 < 0 and t2 >= 0: # gamma is imag and delta is real
-            r1 = (-A / 2 + m) / 2 # imag and r2=Conjugate(r1)
+        if t1 < 0 and t2 >= 0:  # gamma is imag and delta is real
+            r1 = (-A / 2 + m) / 2  # imag and r2=Conjugate(r1)
             i1 = gamma / 2
             r2 = r1
             i2 = -i1
-            r3 = (-A / 2 - m + delta) / 2 # real
+            r3 = (-A / 2 - m + delta) / 2  # real
             i3 = 0
-            r4 = (-A / 2 - m - delta) / 2 # real
+            r4 = (-A / 2 - m - delta) / 2  # real
             i4 = 0
         elif t1 < 0 and t2 < 0:  # gamma and delta are imag
             r1 = (-A / 2 + m) / 2
@@ -79,7 +81,7 @@ class QuarticEquation():
             i3 = delta / 2
             r4 = r3
             i4 = -i3
-        elif t1 >= 0 and t2 < 0: # gamma is real and delta is imag
+        elif t1 >= 0 and t2 < 0:  # gamma is real and delta is imag
             r1 = (-A / 2 + m + gamma) / 2
             i1 = 0
             r2 = (-A / 2 + m - gamma) / 2
@@ -88,7 +90,7 @@ class QuarticEquation():
             i3 = delta / 2
             r4 = r3
             i4 = -i3
-        else: # gamma and delta are reals, then all roots are reals
+        else:  # gamma and delta are reals, then all roots are reals
             r1 = (-A / 2 + m + gamma) / 2
             i1 = 0
             r2 = (-A / 2 - m + delta) / 2
@@ -104,7 +106,7 @@ class QuarticEquation():
             complex(r2, i2),
             complex(r3, i3),
             complex(r4, i4)
-            ]
+        ]
 
         if display:
             print('\nQuartic Coefficients')
@@ -121,6 +123,3 @@ class QuarticEquation():
 
         # output
         return result
-
-
-         
